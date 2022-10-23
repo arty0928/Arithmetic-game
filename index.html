@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>AMEY THAKUR</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body>
+        <div class="md:container md:mx-auto">
+            <div class="mt-100 p-8 place-items-center bg-slate-400">
+                <h1 class="bg-slate-500 place-items-center">The Math Game</h1>
+                <div>
+                    <div id="score" class="bg-slate-600">
+                        Score : <span id="scorevalue">0</span>
+                    </div>
+                    <div id="correct">
+                        Correct
+                    </div>
+                    <div id="wrong">
+                        Try Again
+                    </div>
+                    <div id="instruction">
+                        click the card
+                    </div>
+            
+                    <div id="choices" class="bg-slate-800 inline-grid gap-4 grid-cols-3 place-items-center  ">
+                        <div id="box1" class="box bg-slate-600 w-20 h-20 place-self-center "></div>
+                        <div id="box2" class="box bg-slate-400 w-20 h-20 place-self-center "></div>
+                        <div id="box3" class="box bg-slate-200 w-20 h-20 place-self-center "></div>
+                    </div>
+            
+                    <form id="form" class="block text-sm font-medium text-gray-700 place-items-center">
+                        <label>입력</label>
+                        <input type="text" id="input">
+                        <button type="submit" id="btn"
+                            class="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">제출</button>
+                    </form>
+            
+            
+                    <!-- <div id="question"></div> -->
+            
+                    <div id="startreset">
+                        Start Game
+                    </div>
+                    <div id="timeremaining">
+                        Time remaining :
+                        <span id="timeremainingvalue">60</span>
+                        sec
+                    </div>
+                    <div id="gameOver">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- script -->
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+
+</html>
