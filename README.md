@@ -1,6 +1,8 @@
 # PlusPlus (Basic Arithmetic Game)
  👉🏻 It is a simple Plus game to test how well we are at arithmetic.
+ 
  👉 click the **"Start Button"** and then check the cards three times 
+ 
  👉 then Plus all the number of Cards, enter the answer!
  
  >**[Try The Web Application](https://amey-thakur.github.io/THE-MATH-GAME)**
