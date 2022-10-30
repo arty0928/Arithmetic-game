@@ -27,7 +27,7 @@ document.querySelector("#startreset").onclick = () => {
     else {
         //change the mode of playing
         playing = true;
-        document.querySelector("#letsStart").innerText= "Please Click the Cards then enter the answer!"
+        document.querySelector("#letsStart").innerText = "Click 3 Cards then add up all the Numbers!"
         //set score to 0
         score = 0;
         num1Count, num2Count, num3Count=0;
