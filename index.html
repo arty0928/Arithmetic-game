@@ -2,62 +2,169 @@
 <html lang="en">
 
     <head>
+        <link rel="shortcut icon" type="image/x-icon"
+            href="/img/스쿼드 로고.png">
         <meta charset="UTF-8">
-        <title>AMEY THAKUR</title>
+        <title>SQUARD-PlusPlus (by eunseoPark) </title>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
         <script src="https://cdn.tailwindcss.com"></script>
+        <link href="pricing.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     </head>
 
-    <body>
-        <div class="md:container md:mx-auto">
-            <div class="mt-100 p-8 place-items-center bg-slate-400">
-                <h1 class="bg-slate-500 place-items-center">The Math Game</h1>
+    <body>  
+
+        <div class="flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+            <div class="w-full max-w-md space-y-8">
                 <div>
-                    <div id="score" class="bg-slate-600">
-                        Score : <span id="scorevalue">0</span>
-                    </div>
-                    <div id="correct">
-                        Correct
-                    </div>
-                    <div id="wrong">
-                        Try Again
-                    </div>
-                    <div id="instruction">
-                        click the card
-                    </div>
-            
-                    <div id="choices" class="bg-slate-800 inline-grid gap-4 grid-cols-3 place-items-center  ">
-                        <div id="box1" class="box bg-slate-600 w-20 h-20 place-self-center "></div>
-                        <div id="box2" class="box bg-slate-400 w-20 h-20 place-self-center "></div>
-                        <div id="box3" class="box bg-slate-200 w-20 h-20 place-self-center "></div>
-                    </div>
-            
-                    <form id="form" class="block text-sm font-medium text-gray-700 place-items-center">
-                        <label>입력</label>
-                        <input type="text" id="input">
-                        <button type="submit" id="btn"
-                            class="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">제출</button>
-                    </form>
-            
-            
-                    <!-- <div id="question"></div> -->
-            
-                    <div id="startreset">
-                        Start Game
-                    </div>
-                    <div id="timeremaining">
-                        Time remaining :
+                    <img class="mx-auto h-12 w-auto" src="img/스쿼드 로고.png"
+                        alt="Your Company">
+                    <h2 class="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">⚡ PlusPlus ⚡</h2>
+
+                    <h2 id="letsStart" class="animate-pulse mt-6 text-center text-xl font-bold tracking-tight text-red-600">Let's start!!</h2>
+                    
+                </div>
+
+                <button id="startreset"
+                    class="group relative flex w-full justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+
+                    <svg class="-ml-1 mr-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                        aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    Start Game
+                </button>
+
+                <div id="timeremaining" class="mt-2 mb-0 justify-items-center">
+                    <div class="text-center text-xl text-indigo-500 font-bold"> 
                         <span id="timeremainingvalue">60</span>
                         sec
                     </div>
-                    <div id="gameOver">
+
+                    <div id="score" class="text-center text-xl font-bold text-red-600 mb-0">
+                        <div>
+                            Score : <span id="scorevalue">0</span>
+                        </div> 
                     </div>
+                    
                 </div>
+                
+                
+                <form id="form" class=" mt-0 space-y-6">
+                    
+                    
+                    <input type="hidden">
+                    <div class="mt-2 -space-y-px rounded-md shadow-sm">
+                        <div>
+                            <label class="sr-only" id="form">what is answer?</label>
+                            <input autocomplete='off'
+                                class="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                                placeholder="answer" type="text" id="input">
+                        </div>
+                        
+                    </div>
+        
+                    <div>
+                        <button type="submit" id="btn"
+                            class="group relative flex w-full justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                            <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+                            </span>
+                            submit
+                        </button>                      
+                    </div>     
+
+                </form>     
+            </div>       
+        </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                <symbol id="check" viewBox="0 0 16 16">
+                    <title>Check</title>
+                    <path
+                        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                </symbol>
+            </svg>
+        
+            <div class="container py-3 max-w-screen-md max-h-1">
+                <header>      
+                    
+                    <div
+                            class="flex grid-cols-3 items-center justify-center   sm:flex-row sm:space-x-6 sm:space-y-0">
+
+
+                            <div id="Card1" class=" w-full max-w-sm overflow-hidden rounded-lg bg-white shadow-md duration-300 hover:scale-105 hover:shadow-xl">
+                            
+                                <svg xmlns="http://www.w3.org/2000/svg" class="fill-indigo-500 mx-auto mt-8 h-16 w-16 text-green-400" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <div id="box1" class="mt-2 text-center text-2xl font-bold text-gray-500 mb-10">Click</div>
+                            </div>
+                        
+                            <div
+                                id="Card2" class="w-full max-w-sm overflow-hidden rounded-lg bg-white shadow-md duration-300 hover:scale-105 hover:shadow-xl">
+                        
+                                <svg xmlns="http://www.w3.org/2000/svg" class="fill-indigo-500 mx-auto mt-8 h-16 w-16 text-green-400" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <div id="box2" class="mt-2 text-center text-2xl font-bold text-gray-500 mb-10">Click</div>
+                            </div>
+                        
+                            <div
+                                id="Card3" class="w-full max-w-sm overflow-hidden rounded-lg bg-white shadow-md duration-300 hover:scale-105 hover:shadow-xl">
+                        
+                                <svg xmlns="http://www.w3.org/2000/svg" class="fill-indigo-500 mx-auto mt-8 h-16 w-16 text-green-400" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <div id="box3" class="mt-2 text-center text-2xl font-bold text-gray-500 mb-10">Click</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </header>
+        
+                <main>
+
+                    <div>
+                        
+                </main>
+            </div>
+        
+        
+        <!-- overlay -->
+<!-- component -->
+<div id="modal_overlay" class="hidden min-w-screen h-screen animated fadeIn faster  fixed  left-0 top-0 flex justify-center items-center inset-0 z-50 outline-none focus:outline-none bg-no-repeat bg-center bg-cover" id="modal-id">
+   	<div class="absolute bg-black opacity-80 inset-0 z-0"></div>
+    <div  class="w-full  max-w-lg p-5 relative mx-auto my-auto rounded-xl shadow-lg  bg-white ">
+      <!--content-->
+      <div id="modal">
+        <!--body-->
+        <img class="mx-auto h-12 w-auto mb-6" src="img/스쿼드 로고.png" alt="Your Company">
+
+        <div id="totalScore" class="text-center text-xl font-bold text-indigo-600 mb-0">
+            <div>
+                🎉 Score : <span id="totalScoreValue">0</span> 🎉
             </div>
         </div>
-        
 
-        <!-- script -->
+        <!--footer-->
+        <div class="p-3  mt-2 text-center space-x-4 md:block">
+            <button onclick="openModal(false)" class="mb-0 md:mb-0 bg-red-500 border border-red-500 px-5 py-2 text-sm shadow-sm font-medium tracking-wider text-white rounded-full hover:shadow-lg hover:bg-red-600">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
         <script type="text/javascript" src="js/script.js"></script>
     </body>
 
