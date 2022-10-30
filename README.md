@@ -1,20 +1,15 @@
-# THE-MATH-GAME
- 👉🏻 It is a simple multiplication game to test how well we are at arithmetic.
+# PlusPlus (Basic Arithmetic Game)
+ 👉🏻 It is a simple Plus game to test how well we are at arithmetic.
  
- >**[Try The Web Application](https://amey-thakur.github.io/THE-MATH-GAME)**
-
----
-
- >**WEB APPLICATION - https://amey-thakur.github.io/THE-MATH-GAME**
-
-![image](https://user-images.githubusercontent.com/54937357/154539531-9b586eed-c2d0-44f4-8e8d-a0c00fd66b95.png)
-
-![image](https://user-images.githubusercontent.com/54937357/154540683-a58dad77-dabd-4bbe-bab4-59af34f2e9d1.png)
-
-![image](https://user-images.githubusercontent.com/54937357/154540932-927369bf-1e9c-4419-8dd1-c734dae04317.png)
-
----
-
-<p align="center"> <b> 👉🏻 Created The Math Game 👈🏻 <b> </p>
+ 👉 click the **"Start Button"** and then check the cards three times 
  
-<p align="center"><a href='https://github.com/Amey-Thakur/THE-MATH-GAME', style='color: greenyellow;'> ✌🏻 Back To Repository ✌🏻</p>
+ 👉 then Plus all the number of Cards, enter the answer!
+ 
+ >**[Try The Web Application](https://plusplus-ten.vercel.app/)**
+ 
+ >**[Check the Youtube]( https://youtu.be/kinTQCQPFbw )**
+ 
+
+![image](https://user-images.githubusercontent.com/88071251/198871667-386dbb64-f8c4-41c9-9d37-6c0a693515b7.png)
+![image](https://user-images.githubusercontent.com/88071251/198871694-8e4af680-3085-42d7-ac6e-c679b21d419c.png)
+![image](https://user-images.githubusercontent.com/88071251/198871739-d900b5f3-f45c-49e3-889d-d7299b7b7701.png)
