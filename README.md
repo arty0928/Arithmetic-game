@@ -5,7 +5,7 @@
  
  👉 then Plus all the number of Cards, enter the answer!
  
- >**[Try The Web Application](https://plusplus-ten.vercel.app/)**
+ >**[Try The Web Application](https://plusplus1.vercel.app/)**
  
  >**[Check the Youtube]( https://youtu.be/3v4QWCMZ-g8 )**
  
